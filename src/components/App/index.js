@@ -17,15 +17,13 @@ function App() {
     return (
         <Router>
             <Provider store={ store }>
-                
                     <Switch>
                         <Route exact path='/' component={Landing} />
                         <Route exact path='/landing' component={Landing} />
-                        <Route path='/search' >
+                        <Route path='/search' component={Results}>
                             <Search />
                             <Results />
                         </Route>
-                        <Route path='/search' component={Results} />
                         <Route exact path= '/detail/:id' render={({ match: { params: { id } } }) => <Detail id={id} />} />
                     </Switch>
             </Provider>

@@ -2,10 +2,10 @@ import React from 'react'
 import './index.sass'
 import { useHistory } from 'react-router-dom'
 
-export default function Landing({ onMainPage }) {
+export default function Landing() {
     const history = useHistory()
 
-    onMainPage = () => {
+    const onMainPage = () => {
         history.push('search')
     }
 

@@ -41,7 +41,6 @@ const downloadDetailError = () => ({
     payload: true
 })
 
-
 export function searchGnomesAction(query, criteria){
     return async(dispatch) => {
         dispatch(downloadItems())

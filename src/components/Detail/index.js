@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import './index.sass'
-import { useSelector, useDispatch} from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import { retrieveGnomeAction } from '../../redux/actions'
 
-export default function Detail({id, onBack}) { 
+export default function Detail({id}) { 
     let name, thumbnail, hair_color, weight, height, friends, professions, age
     const history = useHistory()
     const dispatch = useDispatch()
 
     useEffect(() => {
-        (async() =>{
+        (async () =>{
             id && await dispatch(retrieveGnomeAction(parseInt(id)))
         })()
     }, [dispatch, id])
@@ -28,7 +28,7 @@ export default function Detail({id, onBack}) {
         age = item.age 
     }
     
-    onBack = () => {
+    const onBack = () => {
         history.push('/search')
     }
     

@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 export default function ResultItem({ item: { id, name, thumbnail, hair_color, professions, age } }) { 
     const history = useHistory()
     
-    const onGoDetail = async (id) => {
+    const onGoDetail = (id) => {
         history.push(`detail/${id}`)
     }
     

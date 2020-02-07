@@ -6,10 +6,8 @@ import { searchGnomesAction } from '../../redux/actions'
 export default function Search({ gnomes, onResultsRender }) { 
     const dispatch = useDispatch()
 
-    const onSearch = async (query, searchCriteria) => {
-        await dispatch(searchGnomesAction(query, searchCriteria))
-    }
-
+    const onSearch = (query, searchCriteria) => dispatch(searchGnomesAction(query, searchCriteria))
+    
     return <section className="search">
             <div className="search__container container">
                 <form className="container__form form" onSubmit={event => {

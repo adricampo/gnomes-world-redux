@@ -8,8 +8,7 @@ const defaultState = {
     detail: {},
     error: null
 }
-
-
+ 
 const detail = (state = defaultState, action) => {
     switch(action.type) {
         case RETRIEVE_DETAIL:
