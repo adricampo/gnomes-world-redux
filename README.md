@@ -2,7 +2,7 @@
 
 **The App that allows the user to search by different criterias, writting a query (if no criteria selected it will search through all the categories)**
 
-### Deploy link: [gnomesworld](https://sharp-shirley-d9dca7.netlify.com)
+### Deploy link: [gnomesworld](https://gnomes-redux.netlify.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
